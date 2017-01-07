@@ -1,13 +1,13 @@
 let webpack = require('webpack');
 let path = require('path');
 
-const DIST_DIR = path.resolve(__dirname, 'dist');
+const DOCS_DIR = path.resolve(__dirname, 'docs');
 const SRC_DIR = path.resolve(__dirname, 'src');
 
 let config = {
   entry: `${SRC_DIR}/app/index.js`,
   output: {
-    path: `${DIST_DIR}/app`,
+    path: `${DOCS_DIR}/app`,
     filename: 'bundle.js',
     publicPath: '/app/'
   },

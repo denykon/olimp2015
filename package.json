@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build",
-    "build": "webpack -d && copy src\\index.html dist\\index.html && webpack-dev-server --content-base src/ --inline --hot",
-    "build:prod": "webpack -p && copy src\\index.html dist\\index.html"
+    "build": "webpack -d && copy src\\index.html docs\\index.html && webpack-dev-server --content-base src/ --inline --hot",
+    "build:prod": "webpack -p && copy src\\index.html docs\\index.html"
   },
   "author": "Dzianis Kanavalau",
   "license": "MIT",
