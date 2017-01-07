@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import {Menu} from './Menu';
+import {menu} from '../data/data'
 
 export class Header extends Component {
   render() {
-    let menu = {
-      items: ['главная', 'контакты', 'тренерский состав', 'о нас', 'услуги']
-    };
     return (
       <header>
         <Menu menu={menu}/>

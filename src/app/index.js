@@ -4,6 +4,7 @@ import {render} from 'react-dom';
 import {Header} from './components/Header';
 import {Footer} from './components/Footer';
 import {Home} from './components/Home';
+import {Trainers} from './components/Trainers';
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
       <div>
         <Header/>
         <Home name={'Denis'} initialAge={35}/>
+        <Trainers/>
         <Footer/>
       </div>
     );

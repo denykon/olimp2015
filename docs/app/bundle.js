@@ -59,9 +59,9 @@
 	
 	var _Header = __webpack_require__(/*! ./components/Header */ 178);
 	
-	var _Footer = __webpack_require__(/*! ./components/Footer */ 180);
+	var _Footer = __webpack_require__(/*! ./components/Footer */ 181);
 	
-	var _Home = __webpack_require__(/*! ./components/Home */ 181);
+	var _Home = __webpack_require__(/*! ./components/Home */ 182);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -22078,6 +22078,10 @@
 	
 	var _Menu = __webpack_require__(/*! ./Menu */ 179);
 	
+	var _data = __webpack_require__(/*! ../data/data */ 180);
+	
+	var _data2 = _interopRequireDefault(_data);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22098,13 +22102,10 @@
 	  _createClass(Header, [{
 	    key: 'render',
 	    value: function render() {
-	      var menu = {
-	        items: ['главная', 'контакты', 'тренерский состав', 'о нас', 'услуги']
-	      };
 	      return _react2.default.createElement(
 	        'header',
 	        null,
-	        _react2.default.createElement(_Menu.Menu, { menu: menu })
+	        _react2.default.createElement(_Menu.Menu, { menu: _data2.default.items })
 	      );
 	    }
 	  }]);
@@ -22183,6 +22184,29 @@
 
 /***/ },
 /* 180 */
+/*!******************************!*\
+  !*** ./src/app/data/data.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = menu = {
+	  items: ['главная', 'контакты', 'тренерский состав', 'о нас', 'услуги']
+	};
+
+/***/ },
+/* 181 */
 /*!**************************************!*\
   !*** ./src/app/components/Footer.js ***!
   \**************************************/
@@ -22238,7 +22262,7 @@
 	}(_react.Component);
 
 /***/ },
-/* 181 */
+/* 182 */
 /*!************************************!*\
   !*** ./src/app/components/Home.js ***!
   \************************************/
