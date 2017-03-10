@@ -1,3 +1,5 @@
+const DEBUG = process.env.NODE_ENV !== "production";
+
 let webpack = require('webpack');
 let path = require('path');
 
@@ -5,6 +7,7 @@ const DOCS_DIR = path.resolve(__dirname, 'docs');
 const SRC_DIR = path.resolve(__dirname, 'src');
 
 let config = {
+  devtool: DEBUG ? "inline-sourcemap" : null,
   entry: `${SRC_DIR}/app/index.js`,
   output: {
     path: `${DOCS_DIR}/app`,
@@ -22,7 +25,12 @@ let config = {
         }
       }
     ]
-  }
+  },
+  plugins: DEBUG ? [] : [
+                          new webpack.optimize.DedupePlugin(),
+                          new webpack.optimize.OccurrenceOrderPlugin(),
+                          new webpack.optimize.UglifyJsPlugin({mangle: false, sourcemap: false}),
+                        ]
 };
 
 module.exports = config;

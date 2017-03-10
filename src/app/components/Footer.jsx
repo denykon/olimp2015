@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import {Menu} from './Menu';
-import {menu} from '../data/data'
+import {menu} from '../data/data';
 
-export class Header extends Component {
+export class Footer extends Component {
   render() {
     return (
-      <header>
+      <footer>
         <Menu menu={menu}/>
-      </header>
+      </footer>
     );
   }
 }

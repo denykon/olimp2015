@@ -16,6 +16,12 @@ export class Home extends Component {
     });
   }
 
+  makeOlder() {
+    this.setState({
+      age: this.state.age + 1
+    });
+  }
+
   render() {
     return (
       <div>
@@ -23,6 +29,7 @@ export class Home extends Component {
         <p>Age: {this.state.age}</p>
         {/*<button onClick={this.makeYounger.bind(this)}>Make me younger!</button>*/}
         <button onClick={() => this.makeYounger()}>Make me younger!</button>
+        <button onClick={() => this.makeOlder()}>Make me older!</button>
       </div>
     );
   }
