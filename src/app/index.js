@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import {render} from 'react-dom';
 
-import {Header} from './components/Header';
-import {Footer} from './components/Footer';
-import {Home} from './components/Home';
-import {Trainers} from './components/Trainers';
+import {Header} from './components/Header.jsx';
+import {Footer} from './components/Footer.jsx';
+import {Home} from './components/Home.jsx';
+import {Trainers} from './components/Trainers.jsx';
 
 class App extends Component {
   render() {

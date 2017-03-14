@@ -1,7 +1,6 @@
 import React from 'react';
-import {trainers} from '../data/data';
 
-export function Trainers(props) {
+export function Trainers(trainers) {
   return (
     <section className="trainers">
       <h1>Бокс</h1>

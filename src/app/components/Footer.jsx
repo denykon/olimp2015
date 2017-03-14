@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import {Menu} from './Menu';
-import {menu} from '../data/data';
+import {Menu} from './Menu.jsx';
+import {menuList} from '../data/data';
 
 export class Footer extends Component {
   render() {
     return (
       <footer>
-        <Menu menu={menu}/>
+        <Menu list={menuList}/>
       </footer>
     );
   }

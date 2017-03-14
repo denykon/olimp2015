@@ -5,7 +5,7 @@ export class Menu extends Component {
     return (
       <nav className="Menu">
         <ul>
-          {this.props.menu.items.map((item, i) => <li key={i}><a href="#">{item}</a></li>)}
+          {this.props.list.items.map((item, i) => <li key={i}><a href="#">{item}</a></li>)}
         </ul>
       </nav>
     );
@@ -13,5 +13,5 @@ export class Menu extends Component {
 }
 
 Menu.propTypes = {
-  menu: React.PropTypes.object
+  list: React.PropTypes.object
 };
