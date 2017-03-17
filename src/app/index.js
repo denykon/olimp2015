@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import {render} from 'react-dom';
 
-import {Header} from './components/Header.jsx';
-import {Footer} from './components/Footer.jsx';
-import {Home} from './components/Home.jsx';
-import {Trainers} from './components/Trainers.jsx';
+import {Header} from './components/Header/Header.jsx';
+import {Footer} from './components/Footer/Footer.jsx';
+import {Home} from './components/Home/Home.jsx';
+import {Trainers} from './components/Trainers/Trainers.jsx';
+import {trainers} from './data/data';
+
 
 class App extends Component {
   render() {
@@ -12,7 +14,7 @@ class App extends Component {
       <div>
         <Header/>
         <Home name={'Denis'} initialAge={35}/>
-        <Trainers/>
+        <Trainers title='Boxing' trainers={trainers.boxing}/>
         <Footer/>
       </div>
     );

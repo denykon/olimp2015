@@ -1,11 +1,11 @@
 import React from 'react';
 
-export function Trainers(trainers) {
+export function Trainers(props) {
   return (
     <section className="trainers">
-      <h1>Бокс</h1>
+      <h1>{props.title}</h1>
       {
-        trainers.boxing.map((item, i) =>
+        props.trainers.map((item, i) =>
           <div key={i}>
             <p>{item.name}</p>
             <p>{item.position}</p>
