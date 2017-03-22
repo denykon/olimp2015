@@ -16,3 +16,8 @@ export function Trainers(props) {
     </section>
   );
 }
+
+Trainers.propTypes = {
+  title: React.PropTypes.string.isRequired,
+  trainers: React.PropTypes.array.isRequired
+};

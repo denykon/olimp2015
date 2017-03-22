@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export class Home extends Component {
+export class Older extends Component {
 
   constructor(props) {
     super();
@@ -35,7 +35,7 @@ export class Home extends Component {
   }
 }
 
-Home.propTypes = {
+Older.propTypes = {
   name: React.PropTypes.string,
   initialAge: React.PropTypes.number
 };

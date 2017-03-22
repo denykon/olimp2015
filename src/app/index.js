@@ -3,7 +3,7 @@ import {render} from 'react-dom';
 
 import {Header} from './components/Header/Header.jsx';
 import {Footer} from './components/Footer/Footer.jsx';
-import {Home} from './components/Home/Home.jsx';
+import {Older} from './components/Home/Home.jsx';
 import {Trainers} from './components/Trainers/Trainers.jsx';
 import {trainers} from './data/data';
 
