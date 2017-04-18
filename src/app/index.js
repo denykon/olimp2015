@@ -13,7 +13,6 @@ class App extends Component {
     return (
       <div>
         <Header/>
-        <Home name={'Denis'} initialAge={35}/>
         <Trainers title='Boxing' trainers={trainers.boxing}/>
         <Footer/>
       </div>
